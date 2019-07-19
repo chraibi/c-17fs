@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/chraibi/c-17fs.svg?branch=master)](https://travis-ci.com/chraibi/c-17fs)
+
 # Linux
 
 - `mkdir build`
@@ -14,7 +16,7 @@
 - `make`
 
 
-## OSX
+# OSX
 
 Waiting for OSX10.15 and Xcode 11
 
