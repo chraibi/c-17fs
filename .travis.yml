@@ -35,7 +35,8 @@ matrix:
       script:
        - $CXX --version
        - mkdir build && cd build
-
+       - cmake ..
+       - make
     # todo
     # for windows boost is too old. Chocolatey is outdated
     # - name: windows
