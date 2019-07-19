@@ -8,7 +8,7 @@ then
     elif [ "$CXX" == "clang++" ]
     then
         wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
-        sudo apt-add-repository "deb http://apt.llvm.org/xenial/ llvm-toolchain-xenial-8 main"
+        sudo apt-add-repository "deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-8 main"
     fi
     sudo apt-get update -qq;
 elif [ "$TRAVIS_OS_NAME" == "osx" ]
