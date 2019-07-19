@@ -13,7 +13,7 @@ set_property(TARGET main PROPERTY CXX_STANDARD_REQUIRED ON)
 target_link_libraries(main stdc++fs) # link to lib filesystem
 
 if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
-  set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -stdlib=libc++ -lc++fs -lc++abi -lc++")
+  set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -lstdc++fs")
 endif()
 # ---
 
