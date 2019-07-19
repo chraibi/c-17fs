@@ -1,14 +1,16 @@
 # Linux
 
-## g++ >= 8
+- `mkdir build`
 - `cd build`
-- `cmake  -DCMAKE_CXX_COMPILER=g++-8  ..` 
+
+
+## g++ >= 8
+- `cmake  -DCMAKE_CXX_COMPILER=g++-8  ..`
 - `make`
 
 ## clang >=8
 
-- `cd build`
-- `cmake  -DCMAKE_CXX_COMPILER=clang++-8  ..` 
+- `cmake  -DCMAKE_CXX_COMPILER=clang++-8  ..`
 - `make`
 
 
@@ -16,7 +18,7 @@
 
 Waiting for OSX10.15 and Xcode 11
 
-Until then 
+Until then
 
 - Brew user
 ```
