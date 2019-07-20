@@ -2,10 +2,8 @@
 
 if [ "$TRAVIS_OS_NAME" == "linux" ]
 then
-    if [ "$CXX" == "g++" ]
-    then
-        sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
-    elif [ "$CXX" == "clang++" ]
+    sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+    if [ "$CXX" == "clang++" ]
     then
         wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
         sudo apt-add-repository "deb http://apt.llvm.org/bionic/ llvm-toolchain-bionic-8 main"

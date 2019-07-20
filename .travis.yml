@@ -1,12 +1,8 @@
 language: cpp
 dist: bionic
 git:
-  depth: 5
+  depth: 1
   quiet: true
-
-python: 3.7
-
-
 
 matrix:
   include:
@@ -27,7 +23,7 @@ matrix:
       script:
        - mkdir build && cd build
        - cmake  ..
-       - make
+       - make -j
 
     - name: linux (gcc)
       os: linux
@@ -36,7 +32,7 @@ matrix:
        - $CXX --version
        - mkdir build && cd build
        - cmake ..
-       - make
+       - make -j
     # todo
     # for windows boost is too old. Chocolatey is outdated
     # - name: windows
