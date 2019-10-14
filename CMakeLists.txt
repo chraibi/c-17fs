@@ -10,13 +10,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 set_property(TARGET main PROPERTY CXX_STANDARD 17)
 set_property(TARGET main PROPERTY CXX_STANDARD_REQUIRED ON)
 
-target_link_libraries(main stdc++fs) # link to lib filesystem
-
-if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
-  set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -lstdc++fs")
-endif()
-# ---
-
 # optional stuff to check compiler
 
 include(CheckCXXCompilerFlag)
